@@ -1,0 +1,105 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Logo Styling */
+.logogrid {
+display: flex;
+justify-content: center;
+margin-top: 1rem;
+margin-bottom: -25px;
+}
+
+.logo {
+    max-width: 200px;
+}
+/* Main Layout */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Image Section */
+.image-container img {
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+/* Text Section */
+.text-container {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.text-container h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Button Styling */
+.button-group {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #066ad4;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.btn-secondary {
+    background-color: #056a1d;
+}
+
+.btn:hover {
+    background-color: #056a1d;
+}
+.btn-secondary:hover {
+    background-color: #066ad4;
+}
+
+/* Mobile-Friendly Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .image-container {
+        display: none; /* Hide image on mobile */
+    }
+
+    .text-container {
+        padding: 10px;
+    }
+
+    .btn, .btn-secondary:hover {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
